@@ -1,0 +1,486 @@
+    1  docker images
+    2  docker run hello-world
+    3  docker images
+    4  docker image rm -f ee301c921b8a
+    5  docker run -d nginx:latest
+    6  docker ps
+    7  docker ps -a
+    8  docker inspect 179b12413eb4
+    9  docker run -it -rm -d -p 8000:80 -name web nginx
+   10  docker run -it --rm -d -p 8000:80 -name web nginx
+   11  docker run -it --rm -d -p 8000:80 --name web nginx
+   12  curl localhost:8000
+   13  docker ps
+   14  docker stop web
+   15  docker start fcac3c6c0c5b
+   16  docker ps
+   17  docker rm estatic wilbur
+   18  docker rm estatic_wilbur
+   19  docker rm ecstatic_wilbur
+   20  docker ecstatic_wilbur
+   21  docker rm ecstatic_wilbur
+   22  docker rm happy_chaplygin
+   23  docker ps
+   24  docker images
+   25  docker rmi nginx
+   26  docker rmi 8dd77ef2d82e
+   27  docker images
+   28  docker rm 
+   29  docker rm 179b12413eb4
+   30  docker stop 179b12413eb4
+   31  docker rm 179b12413eb4
+   32  docker rmi nginx
+   33  git clone https://github.com/ajeetraina/spring-docker-demo
+   34  csruntimectl java set graalvmjdk-17
+   35  cd spring-docker-demo/
+   36  ./mvnw package
+   37  java -jar target/spring-boot-docker-0.0.1-SNAPSHOT.jar &
+   38  curl -X GET http://localhost:8080
+   39  ps -ef
+   40  kill 3261
+   41  ps -ef
+   42  FROM eclipse-temurin:17-jdk-focal
+   43  nano Dockerfile
+   44  docker build -t spring-helloworld .
+   45  docker run -p 8080:8080 -t spring-helloworld &
+   46  docker stop
+   47  docker ps
+   48  docker stop loving_bose
+   49  docker pull alpine
+   50  docker run -it alpine
+   51  docker pull dockersamples/static-site
+   52  docker run -d -p 80:80 dockersamples/static-site
+   53  docker ps
+   54  docker run -d -p 80:80 dockersamples/static-site
+   55  docker ds
+   56  docker ps
+   57  docker pull dockersamples/static-site
+   58  docker run -d -p 80:80 dockersamples/static-site
+   59  docker ps
+   60  docker pull dockersamples/static-site
+   61  docker run -d dockersamples/static-site
+   62  docker ps
+   63  docker pull dockersamples/static-site
+   64  docker run -d dockersamples/static-site
+   65  docker ps
+   66  docker logs c859b31c2aeb469c2d66da34e2b09f0bb2db8adbd82d666212f1c24e676e5964
+   67  docker ps -a
+   68  docker logs a2a707b20554
+   69  sudo lsof -i :8080
+   70  docker run -d dockersamples/static-site
+   71  docker pull dockersamples/static-site
+   72  docker run -d -p 8080:80 dockersamples/static-site
+   73  docker ps
+   74  docker pull dockersamples/static-site
+   75  docker run -d -p 8080:80 dockersamples/static-site
+   76  docker ps
+   77  docker stop 3a2b549de813
+   78  docker run --name statis-web-app -p 8080:80 my-static-web-app
+   79  docker run -it --rm -d -p 8080:80 --name web statis-web-app
+   80  docker ps
+   81  docker pull dockersamples/static-site
+   82  docker ps
+   83  docker pull alpine
+   84  docker ps
+   85  docker pull alpine
+   86  docker run -it alpine
+   87  docker pull dockersamples/static-site
+   88  docker ps
+   89  docker pull alpine
+   90  docker run -it alpine
+   91  docker ps
+   92  docker pull dockersamples/static-site
+   93  docker ps
+   94  docker images
+   95  docker run
+   96  docker pull alpine
+   97  docker run -it alpine
+   98  docker ps
+   99  docker pull dockersamples/static-site
+  100  docker run -d dockersamples/static-site:latest
+  101  docker run -it --rm -d -p 8080:80 --name static-web-app dockersamples/static-site
+  102  curl -X http://localhost:80
+  103  curl -X http://localhost:8080
+  104  docker ps
+  105  curl localhost:8080
+  106  docker ps
+  107  docker rm 6520ba1fde3b
+  108  docker stop 6520ba1fde3b
+  109  docker rm 6520ba1fde3b
+  110  docker ps
+  111  docker images
+  112  nano Dockerfile
+  113  touch main.py
+  114  nano main.py
+  115  nano Dockerfile
+  116  docker build -t my-python-app .
+  117  docker run my-python-app
+  118  docker run -it alpine
+  119  curl http://localhost:8080
+  120  curl localhost:8080
+  121  docker ps
+  122  docker run -it --rm -d -p 8080:80 --name static-web-app dockersamples/static-site
+  123  docker ps
+  124  curl localhost:8080
+  125  docker run -it --rm -d -p 80:80 --name static-web-app dockersamples/static-site
+  126  nano Dockerfile 
+  127  docker images
+  128  docker run my-python pp
+  129  docker run my-python-app
+  130  mkdir -p .github/workflows
+  131  touch .github/workflows/workflow.yml
+  132  ls
+  133  pwd
+  134  C:\Users\Greta\Desktop\CICD_Lab1
+  135  cd C:\Users\Greta\Desktop\CICD_Lab1
+  136  clear
+  137  mkdir -p .github/workflows
+  138  touch .github/workflows/workflow.yml
+  139  nano .github/workflows/workflow.yml
+  140  clear
+  141  git config --global user.name "gretasubasic16"
+  142  git config --global user.email "dvukmanov@unizd.hr"
+  143  git config --global user.email "greta.subasic16@gmail.com"
+  144  git config --global --list
+  145  git clone https://github.com/gretasubasic16/CICD_Lab1.git
+  146  pwd
+  147  ls
+  148  cd CICD_Lab1/
+  149  mkdir -p .github/workflows
+  150  touch .github/workflows/workflow.yml
+  151  nano .github/workflows/workflow.yml
+  152  git add -A
+  153  git commit -m "my first commit"
+  154  git push
+  155  nano .github/workflows/workflow.yml
+  156  nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+  157  nano .github/workflows/workflow.yml
+  158  nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+  159  nano .github/workflows/workflow.yml
+  160  nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+  161  oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.eu-frankfurt-1.aaaaaaaanufxqbhtqfckh3qyorih4fgofj3ult7az4jqye764cy2uhwzi6ga --file $HOME/.kube/config --region eu-frankfurt-1 --token-version 2.0.0  --kube-endpoint PUBLIC_ENDPOINT
+  162  kubectl get cs
+  163  kubectl version
+  164  kubectl get pods
+  165  kubectl run mypod --image=nginx --restart=Never
+  166  kubectl getpods
+  167  kubectl get pods
+  168  kubectl describe pods mypod1
+  169  kubectl describe pods mypod
+  170  kubectl delete pods mypod
+  171  kubectl getpods
+  172  kubectl get pods
+  173  touch mypod2.yml
+  174  kubectl explain pod
+  175  nano mypod2.yml
+  176  kubectl apply -f mypod2.yml
+  177  nano mypod2.yml
+  178  kubectl apply -f mypod2.yml
+  179  nano mypod2.yml
+  180  kubectl apply -f mypod2.yml
+  181  kubectl get pods
+  182  kubectl delete pod mypod2
+  183  kubectl get pods
+  184  touch mypod2-service.yaml
+  185  nano mypod2-service.yaml 
+  186  kubectl apply -f mypod2-service.yaml
+  187  kubectl get svc
+  188  kubectl apply -f mypod2.yml
+  189  kubectl proxy --port=8080&
+  190  curl http://localhost:8080/api/v1/namespaces/default/services/webapp-service:80/proxy/
+  191  kubectl get pods --selector=app=my-webapp
+  192  nano mypod2-service.yaml 
+  193  kubectl apply -f mypod2-service.yaml 
+  194  kubectl proxy --port=8080&
+  195  curl http://localhost:8080/api/v1/namespaces/default/services/webapp-service:80/proxy/
+  196  kubectll get svc
+  197  kubectl get svc
+  198  kubectl apply -f mypod2.yml
+  199  kubectl proxy --port=8080 &
+  200  lsof -i tcp:8080
+  201  kubectl get pods --selector=app=my-webapp
+  202  nano mypod2.yml
+  203  kubectl apply -f pod.yaml
+  204  kubectl apply -f mypod2.yml
+  205  kubectl get pods --selector=app=my-webapp
+  206  kubectl get services
+  207  kubectl get endpoints webapp-service
+  208  kubectl proxy --port=8080 &
+  209  curl http://localhost:8080/api/v1/namespaces/default/services/webapp-service:80/proxy/
+  210  ps -ef
+  211  kubectl get svc webapp-service
+  212  touch mypod2-lb-service.yaml
+  213  nano mypod2-lb-service.yaml 
+  214  kubectl apply -f mypod2-lb-service.yaml
+  215  kubectl get svc -o wide
+  216  kubectl apply -f mypod2-lb-service.yaml
+  217  touch mypod2-deployment.yaml
+  218  nano mypod2-deployment.yaml
+  219  kubectl apply -f mypod2-deployment.yaml
+  220  kubectl get deployments
+  221  kubectl get deployments -o wide
+  222  kubectl get pods
+  223  delete pod mypod2
+  224  kubectl delete pod mypod2
+  225  kubectl get pods
+  226  kubectl delete pod webapp-deployment-5fdf9dd976-b5fhh
+  227  kubectl get pods
+  228  git clone https://github.com/gretasubasic16/docker-node-hello-world.git
+  229  docker images
+  230  nano Dockerfile
+  231  docker build -t my-node-app:v1 .
+  232  ls
+  233  cd docker-node-hello-world/
+  234  docker images
+  235  ls
+  236  docker images
+  237  docker run docker-node-hello-world
+  238  docker build -t my-node-app:v1 .
+  239  docker images
+  240  docker login fra.ocir.io
+  241  docker login -u fru9gaq0xxeh/greta.subasic6@gmail.com fra.ocir.io
+  242  docker login fra.ocir.io
+  243  docker images
+  244  docker tag my-node-app fra.ocir.io/fru9gaq0xxeh/node-projects/my-node-app
+  245  docker images
+  246  docker tag bde52dc5731f fra.ocir.io/fru9gaq0xxeh/node-projects/my-node-app
+  247  docker images
+  248  docker push fra.ocir.io/fru9gaq0xxeh/node-projects/my-node-app
+  249  docker pull node-projects/my-node-app:latest
+  250  docker pull ocid1.containerrepo.oc1.eu-frankfurt-1.0.fru9gaq0xxeh.aaaaaaaaq4622tyxbpe252spgfy65blcft4ztv5tzhymojp4bvmvknmmts4a
+  251  docker pull fra.ocir.io/fru9gaq0xxeh/node-projects/my-node-app:latest
+  252  node-app.yaml
+  253  docker touch node-app.yaml
+  254  docker nano node-app.yaml
+  255  nano node-app.yaml
+  256  kubectl apply -f node-app.yaml
+  257  kubectl get pods -l app=sbapp
+  258  kubectl get svc
+  259  http://10.96.0.1:8080
+  260  nano Dockerfile 
+  261  curl https://start.spring.io/starter.zip 2 -d type=maven-project 3 -d language=java 4 -d bootVersion=3.3.0 5 -d baseDir=hello-world 6 -d packaging=jar 7 -d javaVersion=17 8 -d dependencies=web 9 -o hello-world.zip
+  262  curl https://start.spring.io/starter.zip   -d type=maven-project   -d language=java   -d bootVersion=3.3.0   -d baseDir=hello-world   -d packaging=jar   -d javaVersion=17   -d dependencies=web   -o hello-world.zip
+  263  unzip hello-world.zip -d hello-world
+  264  cd hello-world
+  265  nano DemoApplication.java
+  266  ./mvnw package
+  267  cat $HOME/hello-world/src/main/java/com/example/demo/DemoApplication.java
+  268  nano DemoApplication.java
+  269  cat $HOME/hello-world/src/main/java/com/example/demo/DemoApplication.java
+  270  nano DemoApplication.java
+  271  ls -R $HOME/hello-world
+  272  nano DemoApplication.java
+  273  ls
+  274  cd hello-world/
+  275  ls
+  276  nano DemoApplication.java
+  277  curl https://start.spring.io/starter.zip   -d type=maven-project   -d language=java   -d bootVersion=3.3.0   -d baseDir=hello-world   -d packaging=jar   -d javaVersion=17   -d dependencies=web   -o hello-world.zip
+  278  unzip hello-world.zip -d hello-world
+  279  ls -R hello-world
+  280  nano hello-world/src/main/java/com/example/demo/DemoApplication.java
+  281  cat $HOME/hello-world/src/main/java/com/example/demo/DemoApplication.java
+  282  nano hello-world/src/main/java/com/example/demo/DemoApplication.java
+  283  ls
+  284  cd src
+  285  ls
+  286  cd main
+  287  ls
+  288  cd java
+  289  ls
+  290  cd com
+  291  cd example
+  292  cd demo
+  293  nano DemoApplication.java
+  294  cat $HOME/hello-world/src/main/java/com/example/demo/DemoApplication.java
+  295  ls
+  296  cat DemoApplication.java 
+  297  cd ..
+  298  ls
+  299  cd ..
+  300  ls
+  301  cd ..
+  302  ls
+  303  cd ..
+  304  ls
+  305  cd hello-world
+  306  ls
+  307  cd hello-world/
+  308  ls
+  309  ./mvnw clean package
+  310  java -jar target/demo-0.0.1-SNAPSHOT.jar &
+  311  curl http://localhost:8080/hello/Unizd
+  312  nano src/main/java/com/example/demo/DemoApplication.java
+  313  curl http://localhost:8080/hello/Unizd
+  314  nano src/main/java/com/example/demo/DemoApplication.java
+  315  ps -ef | grep java
+  316  tail -f logs/application.log
+  317  curl http://localhost:8080
+  318  ps -ef | grep java
+  319  kill pid 3794
+  320  ls
+  321  cd hello-world
+  322  ls
+  323  cd hello-world/
+  324  ls
+  325  cd src
+  326  ls
+  327  cd main
+  328  ls
+  329  cd java
+  330  ls
+  331  cd com
+  332  ls
+  333  cd example/
+  334  ls
+  335  cd demo
+  336  ls
+  337  nano DemoApplication.java 
+  338  cd ..
+  339  curl http://localhost:8080/hello/Unizd
+  340  ls
+  341  ./mvnw clean package
+  342  curl http://localhost:8080/hello/Unizd
+  343  java -jar target/demo-0.0.1-SNAPSHOT.jar &
+  344  curl http://localhost:8080/hello/Unizd
+  345  git init
+  346  git add .
+  347  git commit -m "first commit"
+  348  git remote add origin <URL_udaljenog_repozitorija>
+  349  git remote add origin https://github.com/gretasubasic16/kolokvij1-2.git
+  350  git push -u origin main
+  351  git push -u origin master
+  352  git checkout -b feature/change-message
+  353  nano $HOME/hello-world/src/main/java/com/example/demo/DemoApplication.java
+  354  nano /hello-world/src/main/java/com/example/demo/DemoApplication.java
+  355  nano DemoApplication.java 
+  356  ls
+  357  /src
+  358  cd src 
+  359  ls
+  360  cd main
+  361  ls
+  362  cd java
+  363  ls
+  364  cd com
+  365  ls
+  366  cd example
+  367  ls
+  368  cd demo
+  369  ls
+  370  nano DemoApplication.java 
+  371  cd ..
+  372  ls
+  373  git add HelloWorldController.java
+  374  git add .
+  375  git commit -m "Change message from 'Hello' to 'Hello1'"
+  376  git checkout main
+  377  git checkout master
+  378  git pull origin main
+  379  git pull origin master
+  380  git checkout feature/change-message
+  381  git rebase main
+  382  git rebase master
+  383  git push origin feature/change-message
+  384  nano Dockerfile
+  385  docker build -t my-spring-app .
+  386  docker run -p 8080:8080 my-spring-app
+  387  sudo netstat -tuln | grep 8080
+  388  docker run -p 80:8080 my-spring-app
+  389  curl http://localhost:80
+  390  docker ps
+  391  docker run
+  392  docker run -p 80:8080 my-spring-app
+  393  docker ps
+  394  nano Dockerfile 
+  395  docker build -t my-spring-app .
+  396  docker run -p 8080:8080 my-spring-app
+  397  docker run -p 9090:8080 my-spring-app
+  398  docker images
+  399  docker run -p 9090:8080 my-spring-app
+  400  curl http://localhost:9090
+  401  docker run -d -p 9090:8080 my-spring-app
+  402  docker ps
+  403  Implementirajte aplikaciju na Kubernetes klaster i omogućite pristup aplikaciji s
+  404  kubectl get cs
+  405  kubectl version
+  406  docker login fra.ocir.io
+  407  docker images
+  408  docker tag my-spring-app https://fra.ocir.io/fru9gaq0xxeh/pring-projects/my-spring-app
+  409  docker tag my-spring-app https://fra.ocir.io/fru9gaq0xxeh/spring-projects/my-spring-app
+  410  docker tag b32e13bc2582 https://fra.ocir.io/fru9gaq0xxeh/spring-projects/my-spring-app
+  411  docker tag b32e13bc2582 fra.ocir.io/fru9gaq0xxeh/spring-projects/my-spring-app
+  412  11.docker images
+  413  docker images
+  414  docker push fra.ocir.io/fru9gaq0xxeh/spring-projects/my-spring-app
+  415  docker pull fra.ocir.io/fru9gaq0xxeh/spring-projects/my-spring-app
+  416  nano my-spring-app.yaml
+  417  kubectl apply -f my-spring-app.yaml
+  418  kubectl get svc
+  419  curl 10.96.229.183:80
+  420  kubectl get svc
+  421  curl http://130.162.57.163:8080
+  422  kubectl apply -f my-spring-app.yaml
+  423  kubectl get svc
+  424  nano my-spring-app.yaml
+  425  kubectl get ingress
+  426  nano my-spring-app.yaml
+  427  kubectl get ingress
+  428  kubectl get svc
+  429  kubectl apply -f my-spring-app.yaml
+  430  nano my-spring-app.yaml
+  431  nano your-ingress.yaml
+  432  kubectl apply -f your-ingress.yaml
+  433  nano your-ingress.yaml
+  434  kubectl apply -f your-ingress.yaml
+  435  kubectl get svc
+  436  mkdir .github/workflows
+  437  ls -a
+  438  mkdir -p .github/workflows
+  439  nano ci-cd.yaml
+  440  cat cubeconfig
+  441  kubectl config view
+  442  cd .github/workflows
+  443  touch deploy.yaml
+  444  nano deploy.yaml 
+  445  kubectl apply
+  446  kubectl apply -f deploy.yaml
+  447  nano deploy.yaml 
+  448  kubectl apply -f deploy.yaml
+  449  kubectl get deployments
+  450  kubectl get pods
+  451  nano readme.md
+  452  git add .
+  453  git commit -m "test ci/cd"
+  454  git push -u origin master
+  455  ls
+  456  nano deploy.yaml 
+  457  ls
+  458  cd 
+  459  ls
+  460  cd hello-world
+  461  ls
+  462  cd hello-world/
+  463  ls
+  464  cd hello-world
+  465  ls
+  466  cd hello-world/
+  467  ls
+  468  cd src/
+  469  ls
+  470  cd main/
+  471  ls
+  472  cd ..
+  473  ls
+  474  cd ..
+  475  ls
+  476  cd ..
+  477  ls
+  478  cd ..
+  479  ls
+  480  cd hello-world/
+  481  ls
+  482  cd hello-world
+  483  ls
+  484  cd hello-world/
+  485  ls
+  486  history > allComands.txt
